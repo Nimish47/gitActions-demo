@@ -1,4 +1,4 @@
-name: Lesson One
+name: Jest-tests-run
 
 on:
   workflow_dispatch:
