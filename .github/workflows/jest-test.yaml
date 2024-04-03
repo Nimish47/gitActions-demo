@@ -1,6 +1,8 @@
 name: Jest-tests-run
 
 on:
+  schedule:
+    - cron: "***"
   workflow_dispatch:
 
 jobs:
