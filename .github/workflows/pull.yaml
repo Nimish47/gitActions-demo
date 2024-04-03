@@ -3,7 +3,7 @@ name: Puller
 on:
   pull_request:
     branches:
-      - main:
+      - main
     paths:
       - jest-tests/**
   workflow_dispatch:
