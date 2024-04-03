@@ -1,6 +1,8 @@
-name: Jest-tests-run
+name: Cron Job
 
 on:
+  # schedule:
+  #   - cron: "*"
   workflow_dispatch:
 
 jobs:
@@ -12,9 +14,10 @@ jobs:
         working-directory: jest-tests
 
     steps:
-      #Checkout Repository
+      #Checkout Our Repository
       - name: Checkout repository 
         uses: actions/checkout@v4
+        run: ls
 
       #Install Nodejs
       - name: Install node  
