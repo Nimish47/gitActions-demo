@@ -1,7 +1,7 @@
 describe("Random test", () => {
 
     test('Test 1', () => {
-        expect("Hello worldy").toBe('Hello worldy');
+        expect("Hello world").toBe('Hello worldy');
     });
 
 })
