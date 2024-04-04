@@ -4,4 +4,8 @@ describe("Random test", () => {
         expect("Hello world").toBe('Hello world');
     });
 
+    test('Test 2', () => {
+        expect("Goodye").toBe('Goodbye');
+    });    
+
 })
