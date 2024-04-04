@@ -1,15 +1,18 @@
-name: Puller
+name: Multi Job
 
 on:
+  push:
+    branches:
+    - main
   pull_request:
     branches:
-      - xyz
+    - main
     paths:
       - jest-tests/**
   workflow_dispatch:
 
 jobs:
-  pull-request-executor:
+  push-request-job:
     runs-on: ubuntu-latest
 
     defaults:
