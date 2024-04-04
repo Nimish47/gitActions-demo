@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  push-request-job:
+  multi-job-executor:
     runs-on: ubuntu-latest
 
     defaults:
