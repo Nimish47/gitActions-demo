@@ -1,18 +1,15 @@
-name: Multi Job
+name: Push task
 
 on:
   push:
     branches:
-    - xyz
-  pull_request:
-    branches:
-    - xyz
+      - main
     paths:
       - jest-tests/**
   workflow_dispatch:
 
 jobs:
-  multi-job-executor:
+  push-task-run:
     runs-on: ubuntu-latest
 
     defaults:
