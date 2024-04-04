@@ -10,6 +10,3 @@ describe("Random test", () => {
     });    
 
 })
-
-})
-
