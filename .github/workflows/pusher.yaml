@@ -1,0 +1,36 @@
+name: Push Job
+
+on:
+  push:
+    branches:
+      - dev
+    paths:
+      - jest-tests/**
+  workflow_dispatch:
+
+jobs:
+  push-request-job:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: jest-tests
+
+    steps:
+      #Checkout Repository
+      - name: Checkout repository 
+        uses: actions/checkout@v4
+
+      #Install Nodejs
+      - name: Install node  
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      #Install dependencies
+      - name: Install dependencies     
+        run: npm i
+
+      #Run tests
+      - name: Run tests  
+        run: npm test
